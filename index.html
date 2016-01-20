@@ -1,16 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Basic Bootstrap Template</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<!-- Optional Bootstrap theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <meta charset="utf-8">
+    <title>Basic Bootstrap Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-<body>
-    <h1>Hello, world!</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
+
+    <body>
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>Title <small>goes here</small></h1>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
+                <h4>Bootstrap Table</h4>
+                <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Peter</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John</td>
+                    <td>johnrambo@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-info">
+            <h4>Bootstrap List</h4>
+            <dl class="dl-horizontal">
+            <dt>Word</dt>
+            <dd>This word is nice.</dd>
+            <dt>Chicken</dt>
+            <dd>My favorite thing to eat.</dd>
+            <dt>SOS</dt>
+            <dd>amiritehahaha</dd>
+            </dl>
+        </div>
+
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-success">
+            <h4>Bootstrap List Groups</h4>
+            <ul class="list-group">
+            <li class="list-group-item">Pictures</li>
+            <li class="list-group-item">Documents</li>
+            <li class="list-group-item">Music</li>
+            <li class="list-group-item">Videos</li>
+            </ul>
+        </div>
+
+        <div class="clearfix visible-md-block"></div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning">
+             <h4>Bootstrap Input Groups</h4>
+             <form>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <input type="checkbox">
+                      </span>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <input type="radio">
+                      </span>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-danger">
+            <h4>Bootstrap Buttons</h4>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
+                <h4>Bootstrap Button Groups</h4>
+                <div class="btn-group">
+                <button type="button" class="btn btn-info">Left</button>
+                <button type="button" class="btn btn-info">Middle</button>
+                <button type="button" class="btn btn-info">Right</button>
+                </div>
+        </div>
+
+
+    </div>
+
+</div>
+    </body>
 </html>
