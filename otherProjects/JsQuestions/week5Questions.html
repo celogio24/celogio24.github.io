@@ -20,10 +20,6 @@
       <li role="presentation"><a href="#Q3" aria-controls="Q3" role="tab" data-toggle="tab">Q3</a></li>
       <li role="presentation"><a href="#Q4" aria-controls="Q4" role="tab" data-toggle="tab">Q4</a></li>
       <li role="presentation"><a href="#Q5" aria-controls="Q5" role="tab" data-toggle="tab">Q5</a></li>
-      <li role="presentation"><a href="#Q6" aria-controls="Q6" role="tab" data-toggle="tab">Q6</a></li>
-      <li role="presentation"><a href="#Q7" aria-controls="Q7" role="tab" data-toggle="tab">Q7</a></li>
-      <li role="presentation"><a href="#Q8" aria-controls="Q8" role="tab" data-toggle="tab">Q8</a></li>
-      <li role="presentation"><a href="#Q9" aria-controls="Q9" role="tab" data-toggle="tab">Q9</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -37,33 +33,19 @@
           <div class="col-md-12">
             <!--put the code in here for display purposes  -->
             <pre>
-            //this function adds up the values of an array and
-            //displays it to the screen
-            //
-            function doQuestion1() {
-            var arr = [23, 46, 34, 76],
-                total = 0;
+              var count = 0;
+              var octothorpString = "#";
 
-            //for each value in the array
-            for (var i = 0; i < arr.length; i++) {
-                //add to the total
-                total += arr[i];
-
-            }
-            //write the total to the results div
-            $("#answerQuestion1").html(total);
-
-            }
-
-            //user clicks button
-            $("#question1").on("click", function() {
-              doQuestion1();
-            })
-                </pre>
+              while(count < 7){
+                console.log(octothorpString);
+                octothorpString += "#";
+                count = count + 1;
+              }
+            </pre>
           </div>
           <!-- put a button here; the id corresponds to a jQuery click event -->
           <div class="col-md-12">
-            <button id="question1" class="btn btn-default" type="submit">Run Code</button>
+            <button id="question1" class="btn btn-default" type="submit">Run the code!</button>
           </div>
           <!--put a div to dump the function output-->
           <div class="col-md-12">
@@ -76,11 +58,22 @@
       <div role="tabpanel" class="tab-pane" id="Q2">
         <div class="row">
           <div class="col-md-12">
-            <pre>//will put code here
-                </pre>
+            <pre>
+              for(i = 1; i <= 100; i++){
+                if(i % 5 === 0 & i % 3 === 0){
+                  console.log("FooBar");
+                } else if (i % 5 === 0) {
+                  console.log("Bar");
+                } else if (i % 3 === 0) {
+                  console.log("Foo");
+                } else {
+                  console.log(i.toString());
+                }
+              }
+            </pre>
           </div>
           <div class="col-md-12">
-            <button id="question2" class="btn btn-default" type="submit">Run Code</button>
+            <button id="question2" class="btn btn-default" type="submit">Run the code!</button>
           </div>
           <div class="col-md-12">
             <div id="answerQuestion2"></div>
@@ -88,45 +81,197 @@
 
         </div>
       </div>
+
+      <!-- Question 3 -->
       <div role="tabpanel" class="tab-pane" id="Q3">
+        <div class="row">
+          <div class="col-md-12">
+            <pre>
+  function chessBoard() {
+        var size = prompt("Please enter a Number");
+        var line = '';
+        var print = "";
+        var i = 0;
 
-      </div>
-      <div role="tabpanel" class="tab-pane" id="Q4">
-
-      </div>
-
-    </div>
-    <!-- end tab-content-->
-
-
-  </div>
-  <!-- end container-->
-  <script>
-    //wait for DOM to load
-    $(document).ready(function() {
-        //code for Q1
-        function doQuestion1() {
-          var arr = [23, 46, 34, 76],
-            total = 0;
-          //go through each item in the array
-          for (var i = 0; i < arr.length; i++) {
-            //add to the total
-            total += arr[i];
-          }
-          //display the answer on the screen by replacing the html of #answerQuestion1 with total
-          $("#answerQuestion1").html(total);
+        for (i = 0; i < size / 2; i++) {
+          line = print + line + '# ';
         }
 
-        function doQuestion2() {}
-        //when user clicks this button, call doQuestion1
-        $("#question1").on("click", function() {
-          doQuestion1();
-        })
-        $("#question2").on("click", function() {
-          doQuestion2();
-        })
-      }) //end ready
-  </script>
+        for (i = 0; i < size; i++) {
+          if (i % 2 === 0) {
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
+        $("#q3result").html(print);
+      }
+
+
+      $("#q3button").on("click", function() {
+
+        chessBoard();
+      });
+
+            </pre>
+          </div>
+          <div class="col-md-12">
+            <button id="question3" class="btn btn-default" type="submit">Run the code!</button>
+          </div>
+          <div class="col-md-12">
+            <div id="answerQuestion3"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div role="tabpanel" class="tab-pane" id="Q4">
+        <div class="row">
+          <div class="col-md-12">
+            <pre>
+              function countBs(bString) {
+        var count = 0;
+        for (var i = 0; i < bString.length; i++) {
+          if (bString.charAt(i) == 'B') {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+
+
+      $("#q4button").on("click", function() {
+
+        var userInput = prompt("");
+        var x = countBs(userInput);
+
+        $("#q4result").html(x);
+      });
+
+            </pre>
+          </div>
+          <div class="col-md-12">
+            <button id="question4" class="btn btn-default" type="submit">Run the code!</button>
+          </div>
+          <div class="col-md-12">
+            <div id="answerQuestion4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div role="tabpanel" class="tab-pane" id="Q5">
+        <div class="row">
+          <div class="col-md-12">
+            <pre>
+                  function countChar(cString, charMatch) {
+        var count = 0;
+        for (var i = 0; i < cString.length; i++) {
+          if (cString.charAt(i) == charMatch) {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+      $("#q5button").on("click", function() {
+
+        var inputOne = prompt("");
+        var inputTwo = prompt("")
+
+        var t = countChar(inputOne, inputTwo)
+        $("#q5result").html(t);
+      });
+
+            </pre>
+          </div>
+          <div class="col-md-12">
+            <button id="question5" class="btn btn-default" type="submit">Run the code!</button>
+          </div>
+          <div class="col-md-12">
+            <div id="answerQuestion5"></div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- panels -->
+      <div role="tabpanel" class="tab-pane" id="Q3">
+
+
+        <div role="tabpanel" class="tab-pane" id="Q4">
+
+
+          <div role="tabpanel" class="tab-pane" id="Q5">
+
+
+            <div role="tabpanel" class="tab-pane" id="Q6">
+
+
+              <div role="tabpanel" class="tab-pane" id="Q7">
+
+
+                <div role="tabpanel" class="tab-pane" id="Q8">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q9">
+
+
+                </div>
+
+              </div>
+              <!-- end tab-content-->
+
+            </div>
+            <!-- end container-->
+            <script>
+              //wait for DOM to load
+              $(document).ready(function() {
+                  //code for Q1
+                  function doQuestion1() {
+                    var arr = [23, 46, 34, 76],
+                      total = 0;
+                    //go through each item in the array
+                    for (var i = 0; i < arr.length; i++) {
+                      //add to the total
+                      total += arr[i];
+                    }
+                    //display the answer on the screen by replacing the html of #answerQuestion1 with total
+                    $("#answerQuestion1").html(total);
+                  }
+
+                  function doQuestion2() {}
+                  //when user clicks this button, call doQuestion1
+                  $("#question1").on("click", function() {
+                    doQuestion1();
+                  })
+                  $("#question2").on("click", function() {
+                    doQuestion2();
+                  })
+                  $("#question3").on("click", function() {
+                    doQuestion3();
+                  })
+                  $("#question4").on("click", function() {
+                    doQuestion4();
+                  })
+                  $("#question5").on("click", function() {
+                    doQuestion5();
+                  })
+                  $("#question6").on("click", function() {
+                    doQuestion6();
+                  })
+                  $("#question7").on("click", function() {
+                    doQuestion7();
+                  })
+                  $("#question8").on("click", function() {
+                    doQuestion8();
+                  })
+                  $("#question9").on("click", function() {
+                    doQuestion9();
+                  })
+
+                }) //end ready
+            </script>
 </body>
 
 </html>
