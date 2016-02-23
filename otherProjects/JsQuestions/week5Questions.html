@@ -230,12 +230,48 @@
         }
 
         function doQuestion2() {}
-        //when user clicks this button, call doQuestion1
+
         $("#question1").on("click", function() {
           doQuestion1();
         }) $("#question2").on("click", function() {
+          for (i = 1; i <= 100; i++) {
+            if (i % 5 === 0 & i % 3 === 0) {
+              console.log("FooBar");
+            } else if (i % 5 === 0) {
+              console.log("Bar");
+            } else if (i % 3 === 0) {
+              console.log("Foo");
+            } else {
+              console.log(i.toString());
+            }
+          }
           doQuestion2();
         }) $("#question3").on("click", function() {
+          function chessBoard() {
+            var size = prompt("Please enter your favourite number");
+            var line = '';
+            var print = "";
+            var i = 0;
+
+            for (i = 0; i < size / 2; i++) {
+              line = print + line + '# ';
+            }
+
+            for (i = 0; i < size; i++) {
+              if (i % 2 === 0) {
+                print = print + (' ' + line) + "<br/>";
+              } else {
+                print = print + (line) + "<br/>";
+              }
+            }
+            $("#q3result").html(print);
+          }
+
+
+          $("#q3button").on("click", function() {
+
+            chessBoard();
+          });
           doQuestion3();
         }) $("#question4").on("click", function() {
           function countBs(bString) {
@@ -258,6 +294,23 @@
           });
           doQuestion4();
         }) $("#question5").on("click", function() {
+          function countChar(cString, charMatch) {
+            var count = 0;
+            for (var i = 0; i < cString.length; i++) {
+              if (cString.charAt(i) == charMatch) {
+                count = (count + 1);
+              }
+            }
+            return count;
+          }
+          $("#q5button").on("click", function() {
+
+            var inputOne = prompt("S");
+            var inputTwo = prompt("Sassy")
+
+            var t = countChar(inputOne, inputTwo)
+            $("#q5result").html(t);
+          });
           doQuestion5();
         }) $("#question6").on("click", function() {
           doQuestion6();
