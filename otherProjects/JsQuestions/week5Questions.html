@@ -240,7 +240,19 @@ function getTriangle(){
             <pre>
 
        <!-- question 6 -->
-                    test
+       function range(start, end) {
+var arr = [];
+if (start <= end) {
+for (start; start <= end; start++) {
+arr.push(start);
+}
+}
+return arr;
+}
+$("‪#‎q6button‬").on("click", function() {
+var rangeAnswer = range(3, 5);start and end parameters
+$("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
+});
                 </pre>
           </div>
           <div class="col-md-12">
@@ -443,16 +455,31 @@ function getTriangle(){
 
 
       $("#q6button").on("click", function() {
-        $("#q6result").html("Answer six!");
+
+        function range(start, end) {
+ var arr = [];
+ if (start <= end) {
+ for (start; start <= end; start++) {
+ arr.push(start);
+ }
+ }
+ return arr;
+ }
+ $("‪#‎q6button‬").on("click", function() {
+ var rangeAnswer = range(3, 5);start and end parameters
+ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
+ });
+
+        $("#q6result").html("Answer six");
       });
       $("#q7button").on("click", function() {
-        $("#q7result").html("Answer seven!");
+        $("#q7result").html("Answer seven");
       });
       $("#q8button").on("click", function() {
-        $("#q8result").html("Answer eight!");
+        $("#q8result").html("Answer eight");
       });
       $("#q9button").on("click", function() {
-        $("#q9result").html("Answer nine!");
+        $("#q9result").html("Answer nine");
       });
     });
   </script>
