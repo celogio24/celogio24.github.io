@@ -33,13 +33,9 @@
           <div class="col-md-12">
             <!--put the code in here for display purposes  -->
             <pre>
-              var count = 0;
-              var octothorpString = "#";
-
-              while(count < 7){
-                console.log(octothorpString);
-                octothorpString += "#";
-                count = count + 1;
+              var number = "#";
+              for(var number="#"; number<"#######"; number+="#")
+              console.log(number);
               }
             </pre>
           </div>
@@ -88,7 +84,7 @@
           <div class="col-md-12">
             <pre>
   function chessBoard() {
-        var size = prompt("Please enter a Number");
+        var size = prompt("Please enter your favourite number");
         var line = '';
         var print = "";
         var i = 0;
@@ -143,10 +139,10 @@
 
       $("#q4button").on("click", function() {
 
-        var userInput = prompt("");
+        var userInput = prompt("Bubble");
         var x = countBs(userInput);
 
-        $("#q4result").html(x);
+        $("#q4result").html(count);
       });
 
             </pre>
@@ -176,8 +172,8 @@
       }
       $("#q5button").on("click", function() {
 
-        var inputOne = prompt("");
-        var inputTwo = prompt("")
+        var inputOne = prompt("S");
+        var inputTwo = prompt("Sassy")
 
         var t = countChar(inputOne, inputTwo)
         $("#q5result").html(t);
@@ -196,82 +192,85 @@
 
 
       <!-- panels -->
-      <div role="tabpanel" class="tab-pane" id="Q3">
+      <div role="tabpanel" class="tab-pane" id="Q1">
 
 
-        <div role="tabpanel" class="tab-pane" id="Q4">
+        <div role="tabpanel" class="tab-pane" id="Q2">
 
 
-          <div role="tabpanel" class="tab-pane" id="Q5">
+          <div role="tabpanel" class="tab-pane" id="Q3">
 
 
-            <div role="tabpanel" class="tab-pane" id="Q6">
+            <div role="tabpanel" class="tab-pane" id="Q4">
 
 
-              <div role="tabpanel" class="tab-pane" id="Q7">
+              <div role="tabpanel" class="tab-pane" id="Q5">
 
-
-                <div role="tabpanel" class="tab-pane" id="Q8">
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q9">
-
-
-                </div>
 
               </div>
-              <!-- end tab-content-->
-
             </div>
-            <!-- end container-->
-            <script>
-              //wait for DOM to load
-              $(document).ready(function() {
-                  //code for Q1
-                  function doQuestion1() {
-                    var arr = [23, 46, 34, 76],
-                      total = 0;
-                    //go through each item in the array
-                    for (var i = 0; i < arr.length; i++) {
-                      //add to the total
-                      total += arr[i];
-                    }
-                    //display the answer on the screen by replacing the html of #answerQuestion1 with total
-                    $("#answerQuestion1").html(total);
-                  }
+          </div>
+        </div>
 
-                  function doQuestion2() {}
-                  //when user clicks this button, call doQuestion1
-                  $("#question1").on("click", function() {
-                    doQuestion1();
-                  })
-                  $("#question2").on("click", function() {
-                    doQuestion2();
-                  })
-                  $("#question3").on("click", function() {
-                    doQuestion3();
-                  })
-                  $("#question4").on("click", function() {
-                    doQuestion4();
-                  })
-                  $("#question5").on("click", function() {
-                    doQuestion5();
-                  })
-                  $("#question6").on("click", function() {
-                    doQuestion6();
-                  })
-                  $("#question7").on("click", function() {
-                    doQuestion7();
-                  })
-                  $("#question8").on("click", function() {
-                    doQuestion8();
-                  })
-                  $("#question9").on("click", function() {
-                    doQuestion9();
-                  })
+      </div>
+      <!-- end container-->
+      <script>
+        //wait for DOM to load
+        $(document).ready(function() {
+          //code for Q1
 
-                }) //end ready
-            </script>
+
+          function doQuestion1() {
+            var number = "#";
+            for (var number = "#"; number < "#######"; number += "#")
+              console.log(number);
+          }
+          //display the answer on the screen by replacing the html of #answerQuestion1 with total
+          $("#answerQuestion1").html(number);
+        }
+
+        function doQuestion2() {}
+        //when user clicks this button, call doQuestion1
+        $("#question1").on("click", function() {
+          doQuestion1();
+        }) $("#question2").on("click", function() {
+          doQuestion2();
+        }) $("#question3").on("click", function() {
+          doQuestion3();
+        }) $("#question4").on("click", function() {
+          function countBs(bString) {
+            var count = 0;
+            for (var i = 0; i < bString.length; i++) {
+              if (bString.charAt(i) == 'B') {
+                count = (count + 1);
+              }
+            }
+            return count;
+          }
+
+
+          $("#q4button").on("click", function() {
+
+            var userInput = prompt("Bubble");
+            var x = countBs(userInput);
+
+            $("#answerQuestion4").html(count);
+          });
+          doQuestion4();
+        }) $("#question5").on("click", function() {
+          doQuestion5();
+        }) $("#question6").on("click", function() {
+          doQuestion6();
+        }) $("#question7").on("click", function() {
+          doQuestion7();
+        }) $("#question8").on("click", function() {
+          doQuestion8();
+        }) $("#question9").on("click", function() {
+          doQuestion9();
+        })
+
+        }) //end ready
+      </script>
 </body>
 
 </html>
