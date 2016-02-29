@@ -12,7 +12,6 @@
 
 <body>
 
-  </nav>
   <div class="container">
     <ul class="nav nav-tabs" role="tablist">
       <!-- Tabs at top of page  -->
@@ -42,6 +41,7 @@
         <div class="row">
           <div class="col-md-12">
             <pre>
+
     <!-- question 1  -->
 
 function getTriangle(){
@@ -76,7 +76,9 @@ function getTriangle(){
         <div class="row">
           <div class="col-md-12">
             <pre>
+
 		 <!-- question 2 -->
+
         function printFooBar() {
         var print = "";
         var number = Number(1);
@@ -117,6 +119,7 @@ function getTriangle(){
         <div class="row">
           <div class="col-md-12">
             <pre>
+
 		 <!-- question 3 -->
 
 		  function chessBoard() {
@@ -162,6 +165,7 @@ function getTriangle(){
         <div class="row">
           <div class="col-md-12">
             <pre>
+
     <!-- question 4 -->
 
 				 function countBs(bString) {
@@ -241,18 +245,16 @@ function getTriangle(){
 
        <!-- question 6 -->
        function range(start, end) {
-var arr = [];
-if (start <= end) {
-for (start; start <= end; start++) {
-arr.push(start);
-}
-}
-return arr;
-}
-$("‪#‎q6button‬").on("click", function() {
-var rangeAnswer = range(3, 5);start and end parameters
-$("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
-});
+         var arr = []
+         for (var i = start; i <= end; i++) {
+           arr.push(i);
+         }
+         return arr;
+       }
+       $("‪#‎q6button‬").on("click", function() {
+         var z = range(3, 5);
+         $("‪#‎q6result‬").html(z);
+       });
                 </pre>
           </div>
           <div class="col-md-12">
@@ -269,8 +271,21 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
         <div class="row">
           <div class="col-md-12">
             <pre>
+
            <!-- question 7 -->
-                    test
+           function arraySum(array) {
+             var total = 0,
+               len = array.length;
+             for (var u = 0; u< len; u++) {
+               total += array[u];
+             }
+             return total;
+           }
+           var myArray = [1, 2, 3, 4];
+           // console.log('First Array Total: ' + arraySum(myArray))
+           $("‪#‎Q7button‬").on("click", function() {
+             $("‪#‎Q7result‬").html("First Array Total: " + arraySum(myArray));
+           });
                 </pre>
           </div>
           <div class="col-md-12">
@@ -287,9 +302,25 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
         <div class="row">
           <div class="col-md-12">
             <pre>
+
        <!-- question 8 -->
 
-                    test
+       function reverseArray(arr) {
+         var new_arr = [];
+         var start = arr.length - 1;
+         var end = 0;
+
+         for (var i = start; i >= end; i -= 1) {
+           new_arr.push(arr[i]);
+         }
+
+         return new_arr;
+       }
+       var p = (A, B, C);
+       $("#q8button").on("click", function() {
+         $("#q8result").html(reverseArray(p));
+       });
+
                 </pre>
           </div>
           <div class="col-md-12">
@@ -306,8 +337,25 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
         <div class="row">
           <div class="col-md-12">
             <pre>
+
         <!-- question 9 -->
-                    test
+        function reverseArrayInPlace(arr) {
+          var temp = 0;
+          var len = arr.length;
+
+          for (var i = 0; i <= len / 2; i += 1) {
+            temp = arr[i];
+            arr[i] = arr[len - 1 - i];
+            arr[len - 1 - i] = temp;
+          }
+
+          return arr;
+        }
+        var l = (1, 2, 3, 4, 5)
+        $("#q9button").on("click", function() {
+          $("#q9result").html(reverseArrayInPlace(l));
+        });
+
                 </pre>
           </div>
           <div class="col-md-12">
@@ -322,6 +370,7 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
       </div>
     </div>
   </div>
+
   <script>
     $(document).ready(function() {
       // code in the general function to allow question one to run
@@ -386,6 +435,8 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
         });
       });
 
+
+      // CODE 3 START
       $("#q3button").on("click", function() {
         $("#q3result").html();
 
@@ -411,6 +462,8 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
           chessBoard();
         });
       });
+
+
       $("#q4button").on("click", function() {
         $("#q4result").html();
       });
@@ -430,9 +483,6 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
         $("#q4result").html(x);
       });
 
-
-
-
       $("#q5button").on("click", function() {
         $("#q5result").html();
       });
@@ -448,41 +498,74 @@ $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
       }
       $("#q5button").on("click", function() {
         var inputOne = prompt("");
-        var inputTwo = prompt("")
-        var t = countChar(inputOne, inputTwo)
+        var inputTwo = prompt("");
+        var t = countChar(inputOne, inputTwo);
         $("#q5result").html(t);
       });
 
-
-      $("#q6button").on("click", function() {
-
-        function range(start, end) {
- var arr = [];
- if (start <= end) {
- for (start; start <= end; start++) {
- arr.push(start);
- }
- }
- return arr;
- }
- $("‪#‎q6button‬").on("click", function() {
- var rangeAnswer = range(3, 5);start and end parameters
- $("‪#‎q6result‬").html("Answer is:" + rangeAnswer.join());
- });
-
-        $("#q6result").html("Answer six");
+      // CODE 6 START
+      function range(start, end) {
+        var arr = []
+        for (var i = start; i <= end; i++) {
+          arr.push(i);
+        }
+        return arr;
+      }
+      $("‪#‎q6button‬").on("click", function() {
+        var z = range(3, 5);
+        $("‪#‎q6result‬").html(z);
       });
-      $("#q7button").on("click", function() {
-        $("#q7result").html("Answer seven");
+
+      // CODE 7 START
+      function arraySum(array) {
+        var total = 0,
+          len = array.length;
+        for (var u = 0; u < len; u++) {
+          total += array[u];
+        }
+        return total;
+      }
+      var myArray = (1, 2, 3, 4);
+      // console.log('First Array Total: ' + arraySum(myArray))
+      $("‪#‎Q7button‬").on("click", function() {
+        $("‪#‎Q7result‬").html("First Array Total: " + arraySum(myArray));
       });
+
+      //Code 8 Start
+      function reverseArray(arr) {
+        var new_arr = [];
+        var start = arr.length - 1;
+        var end = 0;
+
+        for (var i = start; i >= end; i -= 1) {
+          new_arr.push(arr[i]);
+        }
+
+        return new_arr;
+      }
+      var p = (A, B, C);
       $("#q8button").on("click", function() {
-        $("#q8result").html("Answer eight");
+        $("#q8result").html(reverseArray(p));
       });
+
+      //Code 9 Start
+      function reverseArrayInPlace(arr) {
+        var temp = 0;
+        var len = arr.length;
+
+        for (var i = 0; i <= len / 2; i += 1) {
+          temp = arr[i];
+          arr[i] = arr[len - 1 - i];
+          arr[len - 1 - i] = temp;
+        }
+
+        return arr;
+      }
+      var l = (1, 2, 3, 4, 5)
       $("#q9button").on("click", function() {
-        $("#q9result").html("Answer nine");
+        $("#q9result").html(reverseArrayInPlace(l));
       });
+
     });
   </script>
 </body>
-
-</html>
