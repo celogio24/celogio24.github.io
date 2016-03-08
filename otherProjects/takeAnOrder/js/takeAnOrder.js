@@ -4,6 +4,17 @@ $(document).ready(function() {
 
   //  $("#").on("", function() {   });
 
+
+  $("#myButton").on("mouseenter", function() {
+    $(this).text("Order Now!");
+    })
+    .on("mouseleave", function() {
+  $(this).text("Click Me!");
+    });
+
+
+
+
   $("#mySingleLineText").on("focus", function() {
       $(this).css("background-color", "#F7F8E0")
 
