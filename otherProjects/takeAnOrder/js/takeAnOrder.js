@@ -6,26 +6,30 @@ $(document).ready(function() {
 
 
   $("#myButton").on("mouseenter", function() {
-    $(this).text("Order Now!");
+      $("#log").append("<br>Button mouseenter");
+      $(this).text("Order Now!");
     })
     .on("mouseleave", function() {
-  $(this).text("Click Me!");
+      $("#log").append("<br>Button mouseleave");
+      $(this).text("Click Me!");
     });
 
 
 
 
   $("#mySingleLineText").on("focus", function() {
+        $("#log").append("<br>input focus");
       $(this).css("background-color", "#F7F8E0")
 
     })
     .on("blur", function() {
+          $("#log").append("<br>input blur");
       $(this).css("background-color", "#FFF")
 
     });
 
   $("#mySelect").on("change", function() {
-var val = $(this).val();
+    var val = $(this).val();
     $("#mySelectMessage").html(val + " is a nice selection!");
 
   });
