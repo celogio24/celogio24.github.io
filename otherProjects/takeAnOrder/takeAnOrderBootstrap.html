@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF­8">
-<title>Bootstrap 3 Responsive Template</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap. min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap­ theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min. js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.mi n.js"></script>
+<head>
+  <meta charset="UTF­8">
+  <title>Take an Order Regular</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap. min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap­ theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
+
 <body>
-<div class="container"> <div class="row">
-<div class="col­md­12"> Lorem Ipsum
-</div> </div>
-</div>
+
+  <div id="wrapper">
+    <h1>Movie Website</h1>
+    
+    <div class="content">
+
+      <div class="typehere">
+        <input id="mySingleLineText" type="text" value="Type here">
+      </div>
+      
+      <div class="textbox">
+        <textarea id="myTextarea" rows="10" cols="50">Write something here</textarea>
+      </div>
+      
+      <!--Select/dropdown goes here-->
+      <select id="mySelect">
+        <option value="Comedy">Comedy</option>
+        <option value="Romance" selected>Romance</option>
+        <option value="Horror">Horror</option>
+      </select>
+      <br>
+
+      <div id="mySelectMessage"></div>
+      <!--radio buttons goes here-->
+      <br>
+
+      <div class="box1">
+        <input type="radio" name="gender" value="New Releases" checked> New Releases
+        <br>
+        <input type="radio" name="gender" value="80's"> 80's
+        <br>
+        <input type="radio" name="gender" value="Children's"> Children's
+      </div>
+      
+      <div class="box2">
+        <input type="checkbox" name="vehicle" value="2016" checked>2016
+        <br>
+        <input type="checkbox" name="vehicle" value="Before 2016">Between 2000-2015
+        <br>
+        <input type="checkbox" name="vehicle" value="Before 2016">Before 2000
+      </div>
+      
+      <div class="button"
+        <button id="myButton" type="button">Click Me!</button>
+      </div>
+
+      <div id="log">LOG</div>
+    </div>
+  </div>
+
+  <script src="js/takeAnOrder.js"></script>
 </body>
+
 </html>

@@ -4,10 +4,10 @@ $(document).ready(function() {
 
   //  $("#").on("", function() {   });
 
-
+  // mouseleave and mouse enter
   $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
-      $(this).text("Order Now!");
+      $(this).text("Place my Order!");
     })
     .on("mouseleave", function() {
       $("#log").append("<br>Button mouseleave");
@@ -16,21 +16,22 @@ $(document).ready(function() {
 
 
 
-
+  // focus
   $("#mySingleLineText").on("focus", function() {
-        $("#log").append("<br>input focus");
+      $("#log").append("<br>input focus");
       $(this).css("background-color", "#F7F8E0")
 
     })
+    //blur
     .on("blur", function() {
-          $("#log").append("<br>input blur");
+      $("#log").append("<br>input blur");
       $(this).css("background-color", "#FFF")
 
     });
-
+  //change colour
   $("#mySelect").on("change", function() {
     var val = $(this).val();
-    $("#mySelectMessage").html(val + " is a nice selection!");
+    $("#mySelectMessage").html(val + " is a great movie selection!");
 
   });
 

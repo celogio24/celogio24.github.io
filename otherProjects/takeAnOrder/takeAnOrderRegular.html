@@ -10,38 +10,45 @@
 <body>
 
   <div id="wrapper">
+    <!--Text input goes here-->
     <input id="mySingleLineText" type="text" value="Type here">
     <br>
     <br>
+    <!--Text area goes here-->
     <textarea id="myTextarea" rows="10" cols="50">Write something here</textarea>
     <br>
     <br>
+    <!--Select/dropdown goes here-->
     <select id="mySelect">
-      <option value="value1">Value 1</option>
-      <option value="value2" selected>Value 2</option>
-      <option value="value3">Value 3</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Romance" selected>Romance</option>
+      <option value="Horror">Horror</option>
     </select>
     <br>
 
     <div id="mySelectMessage"></div>
-
+    <!--radio buttons goes here-->
     <br>
-    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="New Releases" checked> New Releases
     <br>
-    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="80's"> 80's
     <br>
-    <input type="radio" name="gender" value="other"> Other
-    <br>
-    <br>
-    <input type="checkbox" name="vehicle" value="Bike" checked>I have a bike
-    <br>
-    <input type="checkbox" name="vehicle" value="Car">I have a car
+    <input type="radio" name="gender" value="Children's"> Children's
     <br>
     <br>
+    <!--checkboxes goes here-->
+    <input type="checkbox" name="vehicle" value="2016" checked>2016
+    <br>
+    <input type="checkbox" name="vehicle" value="Before 2016">Before 2016
+    <br>
+    <input type="checkbox" name="vehicle" value="Before 2016">Before 2000
+    <br>
+    <br>
+    <!--Button goes here-->
     <button id="myButton" type="button">Click Me!</button>
     <br>
     <br>
-<div id="log">LOG</div>
+    <div id="log">LOG</div>
   </div>
 
   <script src="js/takeAnOrder.js"></script>
