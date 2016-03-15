@@ -7,7 +7,7 @@ $.get("http://celogio24.github.io/partials/nav.html", function(data){
 
      // $("body").prepend(data);
       //.container.fadeIn();
-          $(".container").fadeIn(800);
+          $(".container").fadeIn(1200);
       })
 
     })
