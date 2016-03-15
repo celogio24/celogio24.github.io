@@ -7,16 +7,16 @@ $("#getClients").click(function() {
     var table = "<table class='table table-striped table-hover'>" +
       "<tr><th>Name</th><th>Company</th><th>Email</th><th>Phone</th><th>Balance</th></tr>";
     $.each(data, function(index, item) {
-      table += "<tr>"+
-      "<td>" + item.name + "</td>" +
+      table += "<tr>" +
+        "<td>" + item.name + "</td>" +
         "<td>" + item.company + "</td>" +
         "<td>" + item.email + "</td>" +
         "<td>" + item.phone + "</td>" +
-        "<td>" + item.balance + "</td>"+
+        "<td>" + item.balance + "</td>" +
         "</tr>";
     });
     table += "</table>";
     $("#data").append(table);
-  });//getJSON
-});//click
+  }); //getJSON
+}); //click
 //to look at a JSON file clearly copy the contents of clients.json into http://www.jsoneditoronline.org/
