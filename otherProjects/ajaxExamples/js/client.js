@@ -3,7 +3,7 @@ alert("working");
 
 $("#getClients").click(function() {
   //will not work locally with Chrome (use Safari, FF)
-  $.getJSON("jsonDatabase/clients.json", function(data) {
+  $.getJSON("http://celogio24/otherProjects/ajaxExamples/jsonDatabase/clients.json", function(data) {
     var table = "<table class='table table-striped table-hover'>" +
       "<tr><th>Name</th><th>Company</th><th>Email</th><th>Phone</th><th>Balance</th></tr>";
     $.each(data, function(index, item) {
