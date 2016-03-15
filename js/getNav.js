@@ -10,4 +10,4 @@ $.get("http://celogio24.github.io/partials/nav.html", function(data){
           $(".container").fadeIn(800);
       })
 
-    });
+    })
