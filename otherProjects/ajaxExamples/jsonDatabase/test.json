@@ -1,0 +1,29 @@
+$(document).ready(function() {
+
+    $("#getClients").on("click", function() {
+
+        var url = "http://celogio24.github.io/otherProjects/ajaxExamples/jsonDatabase/test.json";
+
+        $.getJSON(url, function(data) {
+            var html = "<list class='list list-hover list-striped'>" +
+              "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
+
+            $.each(data, function(index, item) {
+
+              html += "<tr>" +
+                "<li>" + item.name + "</li>" +
+                "<li>" + item.email + "</li>" +
+                "<li>" + item.company + "</li>" +
+                "</tr>";
+            })
+
+            html += "</list>";
+            $("#data").append(html);
+            //alert(data);
+            //console.dir(data);
+
+          }) //getJSON
+
+      }) //click
+
+  }) //ready
