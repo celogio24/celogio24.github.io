@@ -10,6 +10,7 @@ $(document).ready(function() {
 
             $.each(data, function(index, item) {
 
+//Table
               html += "<tr>" +
                 "<td>" + item.name + "</td>" +
                 "<td>" + item.email + "</td>" +
