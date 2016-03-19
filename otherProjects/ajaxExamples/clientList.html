@@ -10,6 +10,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <style>
+         pre {
+             font-family: monospace;
+             background: black;
+             color: hotpink;
+         }
+
+     </style>
+
 </head>
 
 <body>
@@ -19,7 +28,11 @@
 
       <div class="col-md-12">
 
-        <button id="getClients" class="btn btn-default btn-lg" type="button">Get Clients</button>
+<div class="jumbotron">
+<h1>Casey's Client List</h1>
+</div>
+
+        <button id="getClients" class="btn btn-success btn-lg" type="button">Get Clients</button>
         <br>
         <br>
 
@@ -27,13 +40,21 @@
 
       <div id="data" class="col-md-12">
 
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-info" style="width: 80%">
+                Number of Clients you have: 5
+            </div>
+        </div>
+    </div>
+
       </div>
 
     </div>
   </div>
 
+
 </body>
 <script src="http://celogio24.github.io/js/getNav.js"></script>
-<script src="js/clientList.js"></script>
+<script src="js/test.js"></script>
 
 </html>
