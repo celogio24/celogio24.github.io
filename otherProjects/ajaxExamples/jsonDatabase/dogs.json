@@ -1,0 +1,81 @@
+[{
+  "name": "Copper",
+  "breed": "K-9",
+  "color": "Brown & White",
+  "image": "images/dog1.jpg",
+  "gender": "Male",
+  "comments": [{
+    "username": "DressyRadio",
+    "stars": 5,
+    "comment": "Cool"
+  }, {
+    "username": "GorgeousCozy",
+    "stars": 4,
+    "comment": "Awesome"
+  }, {
+    "username": "Hardingrx",
+    "stars": 6,
+    "comment": "Fab"
+  }]
+
+}, {
+  "name": "Tyson",
+  "breed": "Boxer",
+  "color": "Brown",
+  "image": "images/dog2.jpg",
+  "gender": "Male",
+  "comments": [{
+    "username": "KoolerThanU",
+    "stars": 8,
+    "comment": "Blessed"
+  }, {
+    "username": "2Blessed2BStressed",
+    "stars": 3,
+    "comment": "Not good at all"
+  }, {
+    "username": "HisHer",
+    "stars": 1,
+    "comment": "Hated this cat"
+  }]
+
+}, {
+  "name": "Leo",
+  "breed": "K-9",
+  "color": "Black & White",
+  "image": "images/dog3.jpg",
+  "gender": "Male",
+  "comments": [{
+    "username": "DayInTheLife",
+    "stars": 7,
+    "comment": "Cuuuuuuute"
+  }, {
+    "username": "2Cool",
+    "stars": 5,
+    "comment": "So much fun!"
+  }, {
+    "username": "Abcdef",
+    "stars": 9,
+    "comment": "What?"
+  }]
+
+}, {
+  "name": "Roxy",
+  "breed": "King Charles",
+  "color": "Brown & White",
+  "image": "images/dog4.jpg",
+  "gender": "Female",
+  "comments": [{
+    "username": "JokesOnU",
+    "stars": 10,
+    "comment": "Yaaaaaas"
+  }, {
+    "username": "HahahaNo",
+    "stars": 4,
+    "comment": "Cat was iight"
+  }, {
+    "username": "SpicyBee",
+    "stars": 1,
+    "comment": "No."
+
+  }]
+}]
