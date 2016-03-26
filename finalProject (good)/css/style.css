@@ -1,0 +1,180 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  overflow-x:hidden;
+}
+
+.jumbotron {
+	background: #2BC0E4; 
+	background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6);
+	background: linear-gradient(to left, #2BC0E4 , #EAECC6); 
+	text-align: center;
+	border-radius: 0;
+}
+
+.jumbotron h1 {
+	font-family: Didot;
+	font-style: italic;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 80px;
+	color: black;
+}
+
+.jumbotron a {
+	font-family: Didot;
+	font-style: italic;
+	font-weight: 300;
+}
+
+img.plane, img.airlineImage {
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+
+
+.quick-links {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.quick-links ul {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+.quick-links ul li a {
+	color: #32c2e3;
+	font-family: Didot;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.button2 {
+  color: black;
+  font-family: Didot;
+  font-style: italic;
+font-weight: 300;
+  background-color: #e6e6e6;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+  text-align:center;
+}
+
+.button2:hover {
+  color: black;
+  background-color: #e6e6e6;
+  text-decoration: underline;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.panel-body p {
+	padding-bottom: 10px;
+}
+
+p.small {
+	font-family: Didot;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 10pt;
+}
+
+p.small2 {
+	font-family: Didot;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 10pt;
+		padding-left: 10%;
+padding-right: 10%;
+}
+
+form {
+	padding-left: 10%;
+padding-right: 10%;
+}
+
+.progress2{
+	height: 20px;
+margin-bottom: 20px;
+overflow: hidden;
+background-color: #f5f5f5;
+border-radius: 4px;
+	margin-left: 10%;
+margin-right: 10%;
+}
+
+p.small2 a, a:focus  {
+	color: #337ab7;
+text-decoration: none;
+}
+
+p.small2 a:hover  {
+	text-decoration: underline;
+}
+
+.line-separator{
+height:1px;
+background:#717171;
+border-bottom:1px solid #b1b1b1;
+	margin-left: 10%;
+margin-right: 10%;
+margin-top: 30px;
+}
+
+footer {
+	font-family: Didot;
+font-style: italic;
+font-weight: 300;
+text-align: center;
+padding: 30px;
+}
+
+nav .nav-pills {
+	padding-left: 10%;
+padding-right: 10%;
+}
+
+.newestDealsCity, .newestDealsDate, .newestDealsPrice {
+		font-family: Didot;
+font-style: italic;
+font-weight: 300;
+padding-bottom: 5px;
+}
+
+.newestDealsCity {
+border-top:1px solid #b1b1b1;
+
+}
+
+.newestDealsCity, .newestDealsDate, .newestDealsPrice,
+ .dogUsername, .dogComment,
+.dogStars {
+	margin-left: 10%;
+margin-right: 10%;
+}
+
+.newestDealsCity {
+padding-top: 15px;
+}
+
+img.airlineImage {
+		padding-left: 10%;
+padding-right: 10%;
+}
+
+.dogUsername, .dogComment, .dogStars {
+font-family: "Helvetica Neue";
+line-height: 19pt;
+font-weight: 300;
+}
+
+.dogStars {
+	margin-bottom: 50px;
+}

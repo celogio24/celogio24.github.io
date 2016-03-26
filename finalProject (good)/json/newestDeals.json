@@ -1,0 +1,72 @@
+[{
+  "city": "Tokyo",
+  "price": "$1,549",
+  "date": "April 28, 2016",
+  "image": "images/airline1.jpg",
+  "comments": [{
+
+    "username": "Luv2Travel",
+    "stars": 7,
+    "comment": "These Deals are amazing, can't wait to book!"
+  }]
+
+}, {
+  "city": "Calgary",
+  "price": "$349",
+  "date": "May 12, 2016",
+  "image": "images/airline2.jpg",
+  "comments": [{
+
+    "username": "GetAwayGirl",
+    "stars": 8,
+    "comment": "Just booked my trip. So excited for my trip to Calgary!"
+  }]
+
+}, {
+  "city": "Paris",
+  "price": "$549",
+  "date": "June 14, 2016",
+  "image": "images/airline3.jpg",
+  "comments": [{
+
+    "username": "OuiBonjour",
+    "stars": 8,
+    "comment": "It has always been my dream to go to Paris, now with Flights4Less that dream is finally coming true!"
+  }]
+
+}, {
+  "city": "Venice",
+  "price": "$549",
+  "date": "June 26, 2016",
+  "image": "images/airline4.jpg",
+  "comments": [{
+
+    "username": "TravellingIsLyfe",
+    "stars": 3,
+    "comment": "Found a price on a cheaper site."
+  }]
+
+}, {
+  "city": "Chicago",
+  "price": "$249",
+  "date": "July 3, 2016",
+  "image": "images/airline5.jpg",
+  "comments": [{
+
+    "username": "BeachLover",
+    "stars": 10,
+    "comment": "Counting down the days until I can visit my family in Chicago. Thanks Flights4Less.com for getting me this great deal!"
+  }]
+
+}, {
+  "city": "Istanbul",
+  "price": "$1,149",
+  "date": "July 24, 2016",
+  "image": "images/airline6.jpg",
+  "comments": [{
+
+    "username": "AdventureMan",
+    "stars": 9,
+    "comment": "I'm going to surprise my girlfriend with a trip to Turkey. With these great deals I can afford to stay a few days longer!"
+  }]
+}]
