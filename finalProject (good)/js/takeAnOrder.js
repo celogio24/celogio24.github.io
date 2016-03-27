@@ -31,7 +31,7 @@ $(document).ready(function() {
   //change colour
   $("#mySelect").on("change", function() {
     var val = $(this).val();
-    $("#mySelectMessage").html(val + "");
+    $("#mySelectMessage").html(val + " is a great movie selection!");
 
   });
 
@@ -52,6 +52,7 @@ $(document).ready(function() {
 
     $("#log").append("<br>User clicked the button");
 
+    $("#log").append("<br>Value of input is: " + myInput);
     $("#log").append("<br>Value of input is: " + myInput);
     $("#log").append("<br>Value of textarea is: " + myTextarea);
     $("#log").append("<br>Value of select is: " + mySelect);
