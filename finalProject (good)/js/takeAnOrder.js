@@ -31,7 +31,7 @@ $(document).ready(function() {
   //change colour
   $("#mySelect").on("change", function() {
     var val = $(this).val();
-    $("#mySelectMessage").html(val + " is a great movie selection!");
+    $("#mySelectMessage").html(val + "");
 
   });
 
@@ -52,12 +52,12 @@ $(document).ready(function() {
 
     $("#log").append("<br>User clicked the button");
 
-    $("#log").append("<br>Value of input is: " + myInput);
-    $("#log").append("<br>Value of input is: " + myInput);
-    $("#log").append("<br>Value of textarea is: " + myTextarea);
-    $("#log").append("<br>Value of select is: " + mySelect);
-    $("#log").append("<br>Value of radio button is: " + myRadio);
-    $("#log").append("<br>Value of check is: " + myCheckValues.join());
+    $("#log").append("<br>Name: " + myInput);
+    $("#log").append("<br>E-mail: " + myInput);
+    $("#log").append("<br>Additional Requests: " + myTextarea);
+    $("#log").append("<br>Number of Travellers: " + mySelect);
+    $("#log").append("<br>Location: " + myRadio);
+    $("#log").append("<br>Extra Bookings: " + myCheckValues.join());
   })
 
 });
