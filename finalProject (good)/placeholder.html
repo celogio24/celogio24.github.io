@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF­8">
+  <title>Take an Order Regular</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="jumbotron .visible-lg-*">
+      <h1>Flights<br>4Less</h1>
+      <p>We find the deals, so you don’t have to</p>
+      <a href="#" target="_blank" class="btn btn-primary btn-lg">More Amazing Deals</a>
+    </div>
+  
+  <div id="wrapper">
+    <!--Text input goes here-->
+      <div class="form-group">
+      <label for="exampleInputName2">Name: </label>
+    <input id="mySingleLineText" type="text" value="Last name, First Name">
+    <br>
+  <br>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputName2">E-mail: </label>
+    <input id="mySingleLineText" type="text" value="e-mail@example.com">
+    <br>
+    <br>
+  </div>
+    <!--Text area goes here-->
+    <div class="form-group">
+    <label for="exampleInputName2">Additional Requests </label>
+  </div>
+    <textarea id="myTextarea" rows="10" cols="50">Additional Requests</textarea>
+    <br>
+    <br>
+    <!--Select/dropdown goes here-->
+    <select id="mySelect">
+      <option>Number of Travellers</option>
+      <option value="Comedy">1</option>
+      <option value="Romance">2</option>
+      <option value="Horror">3</option>
+      <option value="Comedy">4</option>
+      <option value="Romance">5</option>
+      <option value="Horror">6</option>
+    </select>
+    <br>
+
+    <div class="col-md-4">
+      <h3>Please Select the Location</h3>
+    <div id="mySelectMessage"></div>
+    <!--radio buttons goes here-->
+    <br>
+    <input type="radio" name="gender" value="New Releases" checked> Istanbul
+    <br>
+    <input type="radio" name="gender" value="80's"> Tokyo
+    <br>
+    <input type="radio" name="gender" value="Children's"> Paris
+    <br>
+    <input type="radio" name="gender" value="Children's"> Calgary
+    <br>
+    <input type="radio" name="gender" value="Children's"> Venice
+    <br>
+    <input type="radio" name="gender" value="Children's"> Chicago
+    <br>
+
+    <h4>Extra Bookings</h4>
+    <div class="checkbox">
+    <!--checkboxes goes here-->
+    <input type="checkbox" name="vehicle" value="2016" checked> Hotel
+    <br>
+    <input type="checkbox" name="vehicle" value="Before 2016"> Car Rental
+    <br>
+    <input type="checkbox" name="vehicle" value="Before 2016"> Cruise
+    <br>
+    <br>
+    <!--Button goes here-->
+    <button id="myButton" type="button">Book now!</button>
+    <br>
+    <br>
+    <div id="log">LOG</div>
+  </div>
+</div>
+</div>
+
+  <script src="js/takeAnOrder.js"></script>
+</body>
+
+</html>
