@@ -14,16 +14,7 @@ $(document).ready(function() {
 
     function getPartial(partial) {
 
-      if (partial == "homePage") {
-
-
-      } else if (partial == "newestDealsPage") {
-
-
-      } else if (partial == "bookFlightPage") {
-
-
-      }
+      alert(partial);
 
     }
 
