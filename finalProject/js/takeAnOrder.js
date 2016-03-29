@@ -40,6 +40,7 @@ $(document).ready(function() {
   $("#myButton").on("click", function() {
 
     var myInput = $("#mySingleLineText").val();
+    var myInput2 = $("#mySingleLineText2").val();
     var myTextarea = $("#myTextarea").val();
     var mySelect = $("#mySelect").val();
     var myRadio = $("[name='gender']:checked").val();
@@ -53,11 +54,18 @@ $(document).ready(function() {
     $("#log").append("<br>User clicked the button");
 
     $("#log").append("<br>Name: " + myInput);
-    $("#log").append("<br>E-mail: " + myInput);
+    $("#log").append("<br>E-mail: " + myInput2);
     $("#log").append("<br>Additional Requests: " + myTextarea);
     $("#log").append("<br>Number of Travellers: " + mySelect);
     $("#log").append("<br>Location: " + myRadio);
     $("#log").append("<br>Extra Bookings: " + myCheckValues.join());
   })
+
+  if (myInput === "") {
+    alert("You forgot to write a name");
+    $("#mySingleLineText").css("background-color", "#EE6363");
+
+
+  }
 
 });
