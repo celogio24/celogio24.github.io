@@ -3,10 +3,15 @@ body {
 	  overflow-x:hidden;
 }
 
+.addPadding {
+margin-left: 20px;
+
+}
+
 .jumbotron {
-	background: #2BC0E4; 
+	background: #2BC0E4;
 	background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6);
-	background: linear-gradient(to left, #2BC0E4 , #EAECC6); 
+	background: linear-gradient(to left, #2BC0E4 , #EAECC6);
 	text-align: center;
 	border-radius: 0;
 }
