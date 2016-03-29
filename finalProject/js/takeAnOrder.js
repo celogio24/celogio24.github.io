@@ -61,9 +61,9 @@ $(document).ready(function() {
     $("#log").append("<br>Extra Bookings: " + myCheckValues.join());
   })
 
-  if (myInput === "") {
+  if (myInput2 === "") {
     alert("You forgot to write a name");
-    $("#mySingleLineText").css("background-color", "#EE6363");
+    $("#mySingleLineText2").css("background-color", "#EE6363");
 
 
   }
