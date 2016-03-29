@@ -61,9 +61,17 @@ $(document).ready(function() {
     $("#log").append("<br>Extra Bookings: " + myCheckValues.join());
   })
 
+$("#recipt").append("<br>Name: " + myInput);
+   $("#recipt").append("<br>E-mail: " + myInput2);
+  $("#recipt").append("<br>Additional Requests: " + myTextarea);
+  $("#recipt").append("<br>Number of Travellers: " + mySelect);
+   $("#recipt").append("<br>Location: " + myRadio);
+   $("#recipt").append("<br>Extra Bookings: " + myCheckValues.join());
+
   if (myInput2 === "") {
     alert("You forgot to write a name");
     $("#mySingleLineText2").css("background-color", "#EE6363");
+
 
 
   }
