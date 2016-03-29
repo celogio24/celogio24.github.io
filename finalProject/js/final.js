@@ -15,13 +15,15 @@ $(document).ready(function() {
     function getPartial(partial) {
 
       if (partial == "homePage") {
-
+        $.get(partials/"home.html"), function(data){
+          
+        }
 
       } else if (partial == "newestDealsPage") {
-
+        alert("2");
 
       } else if (partial == "bookFlightPage") {
-
+        alert("3");
 
       }
 
