@@ -211,6 +211,15 @@ h3 {
   padding: 10px 15px
 }
 
+h4{
+	font-family: Didot;
+	font-style: italic;
+	font-weight: 300;
+  text-align: left;
+	font-size: 20pt;
+  padding: 10px 15px
+}
+
 .checkbox button {
 	  color: black;
   background-color: #e6e6e6;
