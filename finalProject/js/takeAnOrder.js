@@ -90,6 +90,10 @@ $(document).ready(function() {
         alert("Sounds like a fun time!");
 
       }
+
+      // #2 Conditional Logic
+
+
     });
 
   })
