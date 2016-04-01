@@ -59,42 +59,39 @@ $(document).ready(function() {
     $("#log").append("<br>Location: " + myRadio);
     $("#log").append("<br>Extra Bookings: " + myCheckValues.join());
 
+    //Order Form
+    $("#recipt").append("<br>Name: " + myInput);
+    $("#recipt").append("<br>E-mail: " + myInput2);
+    $("#recipt").append("<br>Additional Requests: " + myTextarea);
+    $("#recipt").append("<br>Number of Travellers: " + mySelect);
+    $("#recipt").append("<br>Location: " + myRadio);
+    $("#recipt").append("<br>Extra Bookings: " + myCheckValues.join());
 
-  $("#recipt").append("<br>Name: " + myInput);
-  $("#recipt").append("<br>E-mail: " + myInput2);
-  $("#recipt").append("<br>Additional Requests: " + myTextarea);
-  $("#recipt").append("<br>Number of Travellers: " + mySelect);
-  $("#recipt").append("<br>Location: " + myRadio);
-  $("#recipt").append("<br>Extra Bookings: " + myCheckValues.join());
+    //message box appears if you forget to fill out e-mail
+    console.log("cats" + myInput2)
+    if (!myInput2) {
+      alert("You forgot to write an e-mail");
+      $("#mySingleLineText2").css("background-color", "#EE6363");
+    }
 
-//message box appears if you forget to fill out e-mail
-console.log("cats"+myInput2)
-  if (!myInput2) {
-    alert("You forgot to write an e-mail");
-    $("#mySingleLineText2").css("background-color", "#EE6363");
-  }
-
-//message box appears if you forgot to fill out name
-  console.log("cats"+myInput)
+    //message box appears if you forgot to fill out name
+    console.log("cats" + myInput)
     if (!myInput) {
       alert("You forgot to write a name");
       $("#mySingleLineText").css("background-color", "#EE6363");
     }
 
-// if else statement 
-  $("#mySelect").on("change", function (){
+    // Message appears/pop's up when number is changed
+    $("#mySelect").on("change", function() {
+      $("#mySelectMessage").html("");
+      if ($('#mySelect').val() === '1') {
+        $("#mySelectMessage").html("Why not invite another person!");
+      } else {
+        alert("Sounds like a fun time!");
 
-    if ($('#mySelect').val() === '6') {
+      }
+    });
 
-      alert ("Sounds blessed");
-    }
-    else {
-
-    $("#mySelectMessage").html("ajksdhjak");
-
-    }
-  });
-
-    })
+  })
 
 });
