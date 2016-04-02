@@ -11,7 +11,7 @@ $(document).ready(function() {
     })
     .on("mouseleave", function() {
       $("#log").append("<br>Button mouseleave");
-      $(this).text("Click Me!");
+      $(this).text("Book now!");
     });
 
 
