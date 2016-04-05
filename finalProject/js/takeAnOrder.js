@@ -91,9 +91,6 @@ $(document).ready(function() {
 
       }
 
-      // #2 Conditional Logic
-
-
     });
 
   })
